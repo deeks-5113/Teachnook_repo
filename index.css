@@ -1,0 +1,74 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+.project-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.project-card {
+    background: #161b22;
+    color: #c9d1d9;
+    border: 2px solid #30363d;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #8b949e;
+}
+
+.project-card:hover {
+    background: #238636;
+    color: white;
+    p{
+        color:white;
+    }
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(35, 134, 54, 0.3);
+}
